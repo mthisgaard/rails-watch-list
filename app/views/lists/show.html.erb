@@ -6,14 +6,14 @@
 </div>
 <div class="container my-4">
   <div class="cards">
-    <% @list.movies.each do |movie| %>
+    <% @list.bookmarks.each do |bookmark| %>
       <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="<%= movie.poster_url %>" alt="Movie poster">
+        <img class="card-img-top" src="<%= bookmark.movie.poster_url %>" alt="Movie poster">
         <div class="card-body">
-          <h3 class="card-text"><strong><%= movie.title %></strong></h3>
-          <p class="card-text"><strong><%= movie.rating %></strong></p>
-          <p class="card-text"><%= movie.overview %></p>
-          <%= link_to 'Delete', list_bookmark_path(Bookmark.where(list_id: @list.id, movie_id: movie.id)), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }  %>
+          <h3 class="card-text"><strong><%= bookmark.movie.title %></strong></h3>
+          <p class="card-text"><strong><%= bookmark.movie.rating %></strong></p>
+          <p class="card-text"><%= bookmark.movie.overview %></p>
+          <%= link_to 'Delete', bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }  %>
         </div>
       </div>
     <% end %>
