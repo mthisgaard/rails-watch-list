@@ -1,0 +1,28 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <%= link_to 'My Movie Lists', lists_path, class: "navbar-brand" %>
+    <%# <a class="navbar-brand" href="#"> %>
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active mx-3">
+            <%= link_to 'Add list', new_list_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item dropdown">
+            <%= image_tag "malene_t.jpg", class: 'avatar dropdown-toggle', id: "navbarDropdown", data_bs_toggle: "dropdown", aria_haspopup: "true", aria_expanded: "false" %>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" data-turbo-method="delete" href="#">Log out</a>
+            </div>
+          </li>
+          <!--li class="nav-item"-->
+          <!--/li-->
+      </ul>
+    </div>
+  </div>
+</div>
