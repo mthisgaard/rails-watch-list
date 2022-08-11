@@ -10,3 +10,20 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-color: rgb(36, 34, 40);
+  color: $light-gray;
+}
+
+.add-movie-link {
+  opacity: 0.7;
+  color: $light-gray;
+
+  &:hover {
+    color: $light-gray;
+    opacity: 1;
+    text-decoration: none;
+  }
+}
+

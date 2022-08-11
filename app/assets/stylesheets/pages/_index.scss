@@ -1,2 +1,8 @@
 // Import page-specific CSS files here.
-@import "home";
+@import 'new';
+
+
+body {
+  background-color: rgb(36, 34, 40);
+  color: $light-gray;
+}

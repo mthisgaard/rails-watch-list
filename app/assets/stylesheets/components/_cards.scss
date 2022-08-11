@@ -28,6 +28,58 @@
   height: 100%;
 }
 
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  color: $gray;
+  border-radius: 4px;
+  position: relative;
+}
+
+.card-delete-link {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  opacity: 0.7;
+  color: $light-gray;
+
+  &:hover {
+    color: $light-gray;
+    opacity: 1;
+    text-decoration: none;
+  }
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-rating {
+  position: absolute;
+  background-color: $light-gray;
+  top: 16px;
+  left: 16px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
